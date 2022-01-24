@@ -25,17 +25,17 @@
 ![lambda](screenshots/lambda.png)
 
 ## test SQS visibility timeout
-### A)
+### A) Visibility timeout = 20''
 - SQS > click `Send and receive messages`
 - Message body=`Visibility timeout = 20''`
 - Lambda > click `Test` → just show MSG in 20'' & NOT show after 20''
 - show
 ![20show](screenshots/20show.png)
 ---
--NOT show
+- NOT show
 ![20NOTshow](screenshots/20NOTshow.png)
-### B)
-- SQS > setting `Delivery delay`=10'' > click `Send and receive messages`
+### B) Delivery delay=10''
+- SQS > setting `Delivery delay=10''` > click `Send and receive messages`
 - Message body=`Delivery delay is 10''`
 - Lambda > click `Test` → opposite with Visibility, just show MSG after 10''
 ![10show](screenshots/10show.png)
